@@ -1,1 +1,1 @@
-# Conf_DevCircle_Africa
+# DevCircle Africa Conference
