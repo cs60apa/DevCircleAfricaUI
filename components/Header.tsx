@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+import { notoSerif } from './ui/fonts';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,16 +27,15 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div>
+    <>
       <nav className='flex items-center justify-between  p-8 absolute w-full'>
-        <div className='flex items-center space-x-2 ml-12'>
+        <div className=' ml-12'>
           <Image 
             src='/logo.png'
             alt="logo"
-            height={50}
-            width={50}
+            height={400}
+            width={150}
           />
-          <span className=''>DevCircle Africa</span>
         </div>
 
        <menu>
@@ -82,20 +82,101 @@ const Header = () => {
         </ul>
        </menu>
        <div className="shape1 h-4 w-32 absolute bottom-0">
-
       </div>
-      </nav>
       <div className="shape2 h-14 w-24 absolute top-0 left-80">
-
       </div>
       <div className="shape3 h-8 w-24 absolute top-0 right-64">
-
       </div>
+      </nav>
 
-      <section>
-        {/* Other content */}
+      <section className='pt-40 flex flex-row'>
+        <div className='mt-32 w-6/12 pl-20'>
+          <h2 className={`${notoSerif.className} antialiased text-5xl pb-4 leading-extra-loose`}>A 360 Degree solution for your NFT Business</h2>
+          <p className='text-sm pb-4 pr-20'>logoipsum is a sofware design and engineering partner that hepls you build succesful tech product</p>
+          <div className='flex flex-row space-x-6'>
+            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
+              Get Started
+            </button>
+            <button className="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2   px-4 border border-green-500 hover:border-transparent rounded-full">
+              View Our Portifolio
+            </button>
+          </div>
+        </div>
+        <div className='px-8'>
+          <Image 
+            src='/headerImage.png'
+            alt='hader image'
+            height={700}
+            width={500}
+          />
+        </div>
       </section>
-    </div>
+      <section className='pl-20 mt-6'>
+        <h2 className='font-bold pb-4'>Trusted By</h2>
+        <ul className={`lg:flex ${showMenu ? 'block' : 'hidden'} items-center space-x-6 text-sm mr-8`}>
+        <li>
+            <Link href='#' className='text-white'>
+              <Image 
+              src='/logo.png'
+              alt="logo"
+              height={60}
+              width={120}
+            />
+            </Link>
+          </li>
+          <li>
+            <Link href='#' className='text-white'>
+              <Image 
+              src='/logo.png'
+              alt="logo"
+              height={60}
+              width={120}
+            />
+            </Link>
+          </li>
+          <li>
+            <Link href='#' className='text-white'>
+              <Image 
+              src='/logo.png'
+              alt="logo"
+              height={60}
+              width={120}
+            />
+            </Link>
+          </li>
+          <li>
+            <Link href='#' className='text-white'>
+              <Image 
+              src='/logo.png'
+              alt="logo"
+              height={60}
+              width={120}
+            />
+            </Link>
+          </li>
+          <li>
+            <Link href='#' className='text-white'>
+              <Image 
+              src='/logo.png'
+              alt="logo"
+              height={60}
+              width={120}
+            />
+            </Link>
+          </li>
+          <li>
+            <Link href='#' className='text-white'>
+              <Image 
+              src='/logo.png'
+              alt="logo"
+              height={60}
+              width={120}
+            />
+            </Link>
+          </li>
+        </ul>
+      </section>
+    </>
   );
 };
 
