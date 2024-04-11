@@ -16,6 +16,7 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -55,4 +56,14 @@ nav {
   shape-outside: circle(50% at 30%);
   clip-path: circle(50% at 0%);
   background: lightblue;
+}
+.about {
+  background-color: #1C2632;
+}
+
+.copyright {
+  background-color: #1C2632;
+}
+.greye {
+  background-color: #29313b;
 }

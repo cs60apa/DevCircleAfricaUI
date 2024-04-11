@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import { notoSerif } from './ui/fonts';
+import { notoSerif, jost } from './ui/fonts';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -30,12 +30,14 @@ const Header = () => {
     <>
       <nav className='flex items-center justify-between  p-8 absolute w-full'>
         <div className=' ml-12'>
-          <Image 
-            src='/logo.png'
-            alt="logo"
-            height={400}
-            width={150}
-          />
+          <Link href="#">
+            <Image 
+              src='/logo.png'
+              alt="logo"
+              height={400}
+              width={150}
+            />
+          </Link>
         </div>
 
        <menu>
@@ -91,8 +93,8 @@ const Header = () => {
 
       <section className='pt-40 flex flex-row'>
         <div className='mt-32 w-6/12 pl-20'>
-          <h2 className={`${notoSerif.className} antialiased text-5xl pb-4 leading-extra-loose`}>A 360 Degree solution for your NFT Business</h2>
-          <p className='text-sm pb-4 pr-20'>logoipsum is a sofware design and engineering partner that hepls you build succesful tech product</p>
+          <h2 className={` text-5xl pb-8 font-semibold`}>A 360 Degree solution for your NFT Business</h2>
+          <p className='text-sm pb-8 pr-20'>logoipsum is a sofware design and engineering partner that hepls you build succesful tech product</p>
           <div className='flex flex-row space-x-6'>
             <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
               Get Started
@@ -111,66 +113,66 @@ const Header = () => {
           />
         </div>
       </section>
-      <section className='pl-20 mt-6'>
-        <h2 className='font-bold pb-4'>Trusted By</h2>
-        <ul className={`lg:flex ${showMenu ? 'block' : 'hidden'} items-center space-x-6 text-sm mr-8`}>
+      <section className='pl-20 mt-6 pb-8'>
+        <h5>Trusted By</h5>
+        <ul className={`lg:flex ${showMenu ? 'block' : 'hidden'} items-center h-12 space-x-6`}>
         <li>
-            <Link href='#' className='text-white'>
+            <Link href='#'>
               <Image 
-              src='/logo.png'
+              src='/logo1.png'
               alt="logo"
-              height={60}
-              width={120}
+              height={50}
+              width={130}
             />
             </Link>
           </li>
           <li>
-            <Link href='#' className='text-white'>
+            <Link href='#'>
               <Image 
-              src='/logo.png'
+              src='/logo2.png'
               alt="logo"
-              height={60}
-              width={120}
+              height={50}
+              width={130}
             />
             </Link>
           </li>
           <li>
-            <Link href='#' className='text-white'>
+            <Link href='#'>
               <Image 
-              src='/logo.png'
+              src='/logo3.png'
               alt="logo"
-              height={60}
-              width={120}
+              height={50}
+              width={130}
             />
             </Link>
           </li>
           <li>
-            <Link href='#' className='text-white'>
+            <Link href='#'>
               <Image 
-              src='/logo.png'
+              src='/logo4.png'
               alt="logo"
-              height={60}
-              width={120}
+              height={50}
+              width={150}
             />
             </Link>
           </li>
           <li>
-            <Link href='#' className='text-white'>
+            <Link href='#'>
               <Image 
-              src='/logo.png'
+              src='/logo5.png'
               alt="logo"
-              height={60}
-              width={120}
+              height={50}
+              width={130}
             />
             </Link>
           </li>
           <li>
-            <Link href='#' className='text-white'>
+            <Link href='#'>
               <Image 
               src='/logo.png'
               alt="logo"
-              height={60}
-              width={120}
+              height={50}
+              width={130}
             />
             </Link>
           </li>
