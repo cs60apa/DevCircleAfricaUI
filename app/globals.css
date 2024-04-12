@@ -67,3 +67,6 @@ nav {
 .greye {
   background-color: #29313b;
 }
+.parent-div:hover > .opacity-0 {
+  opacity: 1;
+}

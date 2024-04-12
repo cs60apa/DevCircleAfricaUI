@@ -71,7 +71,7 @@ const Header = () => {
           </li>
           <li>
             <Link href="#">
-            <button className="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-1 px-2 border border-green-500 hover:border-transparent rounded-full flex space-x-1">
+            <button className="bg-transparent hover:bg-green-800 text-green-800 font-semibold hover:text-white py-1 px-2 border border-green-800 hover:border-transparent rounded-full flex space-x-1">
             <Image
              src="/call-icon.png"
              alt="call icon"
@@ -96,10 +96,10 @@ const Header = () => {
           <h2 className={` text-5xl pb-8 font-semibold`}>A 360 Degree solution for your NFT Business</h2>
           <p className='text-sm pb-8 pr-20'>logoipsum is a sofware design and engineering partner that hepls you build succesful tech product</p>
           <div className='flex flex-row space-x-6'>
-            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
+            <button className="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
               Get Started
             </button>
-            <button className="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2   px-4 border border-green-500 hover:border-transparent rounded-full">
+            <button className="bg-transparent hover:bg-green-800 text-green-800 font-semibold hover:text-white py-2   px-4 border border-green-800 hover:border-transparent rounded-full">
               View Our Portifolio
             </button>
           </div>

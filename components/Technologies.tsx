@@ -5,22 +5,36 @@ import { SiFlutter } from "react-icons/si";
 
 function Technologies() {
   return (
-    <div className='py-12 px-5 flex flex-col justify-center'>
+    <div className='py-12  flex flex-col justify-center'>
       <div className='flex flex-col items-center justify-center pb-6'>
         <h2 className='text-5xl py-6 font-semibold'>Technologies we work with</h2>
         <p className='text-sm pb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit maiores</p>
       </div>
-      <div className='flex flex-row ml-20 space-x-12 mr-20'>
-        <div className='flex flex-col space-y-4  w-full'>
-        <div className='p-8 greye rounded-xl'>
+      <div className='flex flex-row pl-20 space-x-12 pr-20 w-full'>
+        <div className='flex flex-col space-y-4 flex-grow'>
+        <div className='p-12 greye rounded-xl '>
           <Image 
             src='/techImage3.png'
             alt='image'
-            height={1200}  
-            width={900}    
+            height={1200}
+            width={900}
           />
         </div>
-
+        <div className='flex flex-row space-x-2 border-green-700 border-b-2 pb-2 items-center'>
+            <Image
+            src='/nftLogo.png'
+            alt='nft logo'
+            height={50}
+            width={50} 
+             />
+          <p className='text-green-700 text-lg'>NFT Development</p>
+        </div>
+        <div className='flex flex-row space-x-2'>
+          <div className='pt-1'>
+            <FaApple size={40} />
+          </div>
+          <p className='text-green-700'>NFT Development</p>
+        </div>
         </div>
         <div className='greye rounded-xl flex flex-col space-y-3 p-4'>
           <div className='flex flex-row p-4 items-start justify-start space-x-4'>
