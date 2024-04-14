@@ -1,39 +1,37 @@
-'use client'
-import React from 'react'
-import Image from 'next/image'
-import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import Link from 'next/link';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div>
-      <div className='flex flex-row space-x-8 py-12 px-12 '>
-        <div className='flex flex-col w-4/12 space-y-3 ml-8'>
-          <Link href="#" className='pb-2'>
-            <Image 
-              src='/logo.png'
-              alt="logo"
-              height={50}
-              width={130}
-            />
+      <div className="flex flex-row space-x-8 py-12 px-12 ">
+        <div className="flex flex-col w-4/12 space-y-3 ml-8">
+          <Link href="#" className="pb-2">
+            <Image src="/1.svg" alt="logo" height={150} width={200} />
           </Link>
-          <p className='text-sm ml-1 w-4/5 pr-2 pb-3'>Lorem ipsum dolor, sit amet consectetur adipiscing elit, nulla</p>
-          <h6 className='text-xl ml-1'>Follow Us</h6>
-          <div className='flex text-blue-700 space-x-4 ml-1'>
-            <Link href="#" >
-              <FaFacebook size={24}  />
+          <p className="text-base ml-1 w-4/5 pr-2 pb-3">
+            An international alliance of autonomous organizations dedicated to
+            enlisting and educating
+          </p>
+          <h6 className="text-xl ml-1">Follow Us</h6>
+          <div className="flex text-orange-700 space-x-4 ml-1">
+            <Link href="https://facebook.com/devcircleafrica">
+              <FaFacebook size={24} />
             </Link>
-            <Link href="#">
-              <FaTwitter size={24}  />
+            <Link href="https://github.com/cs60apa">
+              <FaGithub size={24} />
             </Link>
-            <Link href="#">
+            <Link href="https://linkedin.com/company/devcircleafrica">
               <FaLinkedin size={24} />
             </Link>
           </div>
         </div>
-        <div className='flex flex-col w-64 space-y-2 ml-12'>
-          <h5 className='font-bold pb-3'>Quick Link</h5>
-          <ul className='text-sm flex flex-col space-y-4'>
+        <div className="flex flex-col w-64 space-y-2 ml-12">
+          <h5 className="font-bold pb-3">Quick Link</h5>
+          <ul className="text-lg flex flex-col space-y-4">
             <li>
               <Link href="Services">Services</Link>
             </li>
@@ -47,10 +45,10 @@ const Footer = () => {
               <Link href="#">Careers</Link>
             </li>
           </ul>
-      </div>
-      <div className='flex flex-col w-64 space-y-2'>
-          <h5 className='font-bold pb-3'>Company</h5>
-          <ul className='text-sm flex flex-col space-y-4'>
+        </div>
+        <div className="flex flex-col w-64 space-y-2">
+          <h5 className="font-bold pb-3">Company</h5>
+          <ul className="text-lg flex flex-col space-y-4">
             <li>
               <Link href="#">News and Blogs</Link>
             </li>
@@ -67,10 +65,10 @@ const Footer = () => {
               <Link href="#">Terms & Conditions</Link>
             </li>
           </ul>
-      </div>
-      <div className='flex flex-col w-64 space-y-2'>
-          <h5 className='font-bold pb-3'>Support</h5>
-          <ul className='text-sm flex flex-col space-y-4'>
+        </div>
+        <div className="flex flex-col w-64 space-y-2">
+          <h5 className="font-bold pb-3">Support</h5>
+          <ul className="text-lg flex flex-col space-y-4">
             <li>
               <Link href="#">Customer Support</Link>
             </li>
@@ -81,13 +79,16 @@ const Footer = () => {
               <Link href="#">Live Chat</Link>
             </li>
           </ul>
+        </div>
       </div>
-      </div>
-      <div className='copyright h-12 p-2 flex justify-center items-center'>
-        <p className='text-sm'>Copyright 2024 loremipsum - All rights reserved.</p>
+      <div className="copyright h-12 p-2 flex justify-center items-center">
+        <p className="text-base">
+          <span>&copy; {new Date().getFullYear()} DevCircle Africa</span> - All
+          Rights Reserved{" "}
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
