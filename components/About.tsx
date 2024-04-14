@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 
@@ -9,7 +11,7 @@ function About() {
         <p className='text-sm pb-6'>An outdated website means you are not engaging your customers and driving sales. It's time to get unstuck</p>
       </div>
       <div className='flex flex-row py-4 space-x-12 justify-center pb-12 relative'>
-        <div className='parent-div border border-gray-700 hover:border-green-800 w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3'>
+        <div className='parent-div border border-gray-700 hover:border-green-800 w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3 cursor-pointer'>
           <Image
           src="/nftIcon.png"
           alt="front end icon"
@@ -25,7 +27,7 @@ function About() {
           <h5  className='text-lg py-6'>NFT Marketplace Development</h5>
           <p className='text-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid porro quia fugiat corporis omnis tenetur maxime magnam veniam soluta, debitis officiis non sunt ipsa autem dolores molestiae incidunt reiciendis nulla!</p>
         </div>
-        <div className=' parent-div border border-gray-700 hover:border-green-800  w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3'>
+        <div className=' parent-div border border-gray-700 hover:border-green-800  w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3 cursor-pointer'>
         <Image
           src="/frontendIcon.png"
           alt="front end icon"
@@ -43,7 +45,7 @@ function About() {
         </div>
       </div>
       <div className='flex flex-row py-4 space-x-12  justify-center relative'>
-        <div className=' parent-div border border-gray-700 hover:border-green-800 w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3'>
+        <div className=' parent-div border border-gray-700 hover:border-green-800 w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3 cursor-pointer'>
         <Image
           src="/exchangewalletIcon.png"
           alt="front end icon"
@@ -59,7 +61,7 @@ function About() {
           <h5  className='text-lg py-6'>Exchange Wallet Development</h5>
           <p className='text-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid porro quia fugiat corporis omnis tenetur maxime magnam veniam soluta, debitis officiis non sunt ipsa autem dolores molestiae incidunt reiciendis nulla!</p>
         </div>
-        <div className='parent-div border border-gray-700 hover:border-green-800 w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3 hover:border-1.5'>
+        <div className='parent-div border border-gray-700 hover:border-green-800 w-5/12 py-2 p-4 rounded-lg flex flex-col justify-center h-48 hover:h-40 mt-3 hover:border-1.5 cursor-pointer'>
         <Image
           src="/blockchainIcon.png"
           alt="front end icon"
