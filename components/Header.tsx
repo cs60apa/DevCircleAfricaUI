@@ -28,16 +28,16 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="flex items-center justify-between  p-8 absolute w-full">
-        <div className=" ml-12">
+      <nav className="flex lg:items-center justify-between py-0 lg:py-4 w-full">
+        <div className="ml-4 sm:ml-12 py-8 lg:py-0 ">
           <Link href="/">
             <Image src="/2.svg" alt="logo" height={450} width={200} />
           </Link>
         </div>
 
-        <menu>
-          <div className="block lg:hidden">
-            <div onClick={toggleMenu} className="text-green-700 text-2xl">
+        <menu className="py-7 lg:py-0 flex flex-col lg:flex-row justify-center space-y-3">
+          <div className="block lg:hidden px-6">
+            <div onClick={toggleMenu} className="text-green-700 text-3xl pl-12 w-24">
               {showMenu ? <AiOutlineClose /> : <FaBars />}
             </div>
           </div>
@@ -45,34 +45,34 @@ const Header = () => {
           <ul
             className={`lg:flex ${
               showMenu ? "block" : "hidden"
-            } items-center space-x-6 text-sm mr-8`}
+            } items-center flex-col lg:flex-row justify-start lg:p-0  mr-0 lg:mr-8  lg:bg-transparent lg:space-x-2 `}
           >
-            <li>
-              <Link href="features" className="text-white text-lg">
+            <li className="w-full px-4 py-1 ">
+              <Link href="features" className="text-white text-lg hover:text-gray-300">
                 Features
               </Link>
             </li>
-            <li>
-              <Link href="services" className="text-white text-lg">
+            <li className="w-full px-4 py-1 ">
+              <Link href="services" className="text-white text-lg hover:text-gray-300">
                 Services
               </Link>
             </li>
-            <li>
-              <Link href="pricing" className="text-white text-lg">
+            <li className="w-full px-4 py-1 ">
+              <Link href="pricing" className="text-white text-lg hover:text-gray-300">
                 Princing
               </Link>
             </li>
 
-            <li>
-              <Link href="career" className="text-white text-lg ">
+            <li className="w-full px-4 py-1 ">
+              <Link href="career" className="text-white text-lg hover:text-gray-300">
                 Careers
               </Link>
             </li>
-            <li>
+            <li className="hidden lg:flex ">
               <Link href="tel:+919556307048">
                 <button
                   className="bg-transparent hover:bg-green-800 text-green-800 font-semibold hover:text-white
-                 py-3 px-2 border border-green-800 hover:border-transparent rounded-full flex space-x-1"
+                 py-3 px-2 border border-green-800 hover:border-transparent rounded-full flex space-x-1 text-lg w-44 justify-center items-center" 
                 >
                   <Image
                     src="/call-icon.png"

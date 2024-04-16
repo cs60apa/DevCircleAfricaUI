@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import Slideshow from "../components/Slideshow";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -25,20 +26,29 @@ const Header = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const slides = [
+    '/logo1.png',
+    '/logo2.png',
+    '/logo3.png',
+    '/logo4.png',
+    '/logo5.png',
+    '/logo.png'
+  ];
   return (
     <>
-      <section className="pt-40 flex flex-row">
-        <div className="mt-32 w-6/12 pl-20">
-          <h2 className={` text-5xl pb-8 font-semibold`}>
+      <section className="lg:pt-10 pt-0 flex flex-row w-full">
+        <div className="mt-10 lg:mt-32 w-full lg:w-6/12 px-0 lg:pl-20 lg:text-start text-center">
+          <h2 className='text-3xl md:text-4xl lg:text-5xl pb-8 font-semibold w-full'>
             Empowering Educators to Transform Lives
           </h2>
-          <p className="text-base pb-8 pr-20">
+          <p className="text-base pb-8 pr-0 lg:pr-20 px-2 md:px-20 lg:pl-0">
             A global network of independent organizations that recruit and train
             passionate individuals to commit two years to teach in high-need
             schools and to become lifelong leaders in the effort to expand
             educational opportunity.
           </p>
-          <div className="flex flex-row space-x-6">
+          <div className="flex flex-row space-x-6 w-full justify-center lg:justify-start">
             <button className="bg-green-800 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-full">
               Get Started
             </button>
@@ -50,7 +60,7 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="px-8">
+        <div className="pl-8 hidden lg:block pr-0">
           <Image
             src="/headerImage.png"
             alt="hader image"
@@ -62,9 +72,7 @@ const Header = () => {
       <section className="pl-20 mt-6 pb-8">
         <h5>Trusted By</h5>
         <ul
-          className={`lg:flex ${
-            showMenu ? "block" : "hidden"
-          } items-center h-12 space-x-6`}
+          className='flex  items-center h-12 space-x-6'
         >
           <li>
             <Link href="#">
@@ -97,6 +105,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+
       </section>
     </>
   );

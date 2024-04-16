@@ -7,17 +7,17 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="flex flex-row space-x-8 py-12 px-12 ">
+      <div className="flex flex-row py-12 pl-12 flex-wrap">
         <div className="flex flex-col w-4/12 space-y-3 ml-8">
           <Link href="#" className="pb-2">
-            <Image src="/1.svg" alt="logo" height={150} width={200} />
+            <Image src="/2.svg" alt="logo" height={150} width={200} />
           </Link>
           <p className="text-base ml-1 w-4/5 pr-2 pb-3">
             An international alliance of autonomous organizations dedicated to
             enlisting and educating
           </p>
           <h6 className="text-xl ml-1">Follow Us</h6>
-          <div className="flex text-orange-700 space-x-4 ml-1">
+          <div className="flex text-orange-600 space-x-4 ml-1">
             <Link href="https://facebook.com/devcircleafrica">
               <FaFacebook size={24} />
             </Link>
@@ -29,8 +29,8 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col w-64 space-y-2 ml-12">
-          <h5 className="font-bold pb-3">Quick Link</h5>
+        <div className="flex flex-col w-60 ml-12">
+          <h5 className="font-bold pb-3 text-xl">Quick Link</h5>
           <ul className="text-lg flex flex-col space-y-4">
             <li>
               <Link href="Services">Services</Link>
@@ -46,8 +46,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col w-64 space-y-2">
-          <h5 className="font-bold pb-3">Company</h5>
+        <div className="flex flex-col w-60">
+          <h5 className="font-bold pb-3 text-xl">Company</h5>
           <ul className="text-lg flex flex-col space-y-4">
             <li>
               <Link href="#">News and Blogs</Link>
@@ -66,8 +66,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col w-64 space-y-2">
-          <h5 className="font-bold pb-3">Support</h5>
+        <div className="flex flex-col w-60">
+          <h5 className="font-bold pb-3 text-xl">Support</h5>
           <ul className="text-lg flex flex-col space-y-4">
             <li>
               <Link href="#">Customer Support</Link>
