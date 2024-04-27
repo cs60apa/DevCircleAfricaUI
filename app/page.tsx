@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import Slideshow from "../components/Slideshow";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,23 +25,14 @@ const Header = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
-  const slides = [
-    '/logo1.png',
-    '/logo2.png',
-    '/logo3.png',
-    '/logo4.png',
-    '/logo5.png',
-    '/logo.png'
-  ];
   return (
     <>
-      <section className="lg:pt-10 pt-0 flex flex-row w-full">
+      <section className="lg:pt-10 pt-0 flex flex-row w-full pb-8">
         <div className="mt-10 lg:mt-32 w-full lg:w-6/12 px-0 lg:pl-20 lg:text-start text-center">
           <h2 className='text-3xl md:text-4xl lg:text-5xl pb-8 font-semibold w-full'>
             Empowering Educators to Transform Lives
           </h2>
-          <p className="text-base pb-8 pr-0 lg:pr-20 px-2 md:px-20 lg:pl-0">
+          <p className="text-base pb-8 pr-0 lg:pr-20 px-0 md:px-20 lg:pl-0">
             A global network of independent organizations that recruit and train
             passionate individuals to commit two years to teach in high-need
             schools and to become lifelong leaders in the effort to expand
@@ -69,7 +59,7 @@ const Header = () => {
           />
         </div>
       </section>
-      <section className="pl-20 mt-6 pb-8">
+      <section className="pl-20 mt-6 pb-8 hidden">
         <h5>Trusted By</h5>
         <ul
           className='flex  items-center h-12 space-x-6'
@@ -105,7 +95,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-
       </section>
     </>
   );

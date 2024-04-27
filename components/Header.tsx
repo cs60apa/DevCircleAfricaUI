@@ -36,7 +36,7 @@ const Header = () => {
         </div>
 
         <menu className="py-7 lg:py-0 flex flex-col lg:flex-row justify-center space-y-3">
-          <div className="block lg:hidden px-6">
+          <div className="block lg:hidden ">
             <div onClick={toggleMenu} className="text-green-700 text-3xl pl-12 w-24">
               {showMenu ? <AiOutlineClose /> : <FaBars />}
             </div>
