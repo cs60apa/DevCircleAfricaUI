@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <div className="flex flex-row py-12 flex-wrap lg:ml-12 px-4">
         <div className="flex flex-col w-4/12 space-y-3 ml-4 mb-4">
-          <Link href="#" className="pb-2">
+          <Link href="/" className="pb-2">
             <Image src="/2.svg" alt="logo" height={150} width={200}/>
           </Link>
           <p className="text-base ml-1 w-4/5 pr-2 pb-3 hidden md:block">
@@ -36,10 +36,10 @@ const Footer = () => {
               <Link href="Services">Services</Link>
             </li>
             <li>
-              <Link href="#">Portifolio</Link>
+              <Link href="technology">Technologies</Link>
             </li>
             <li>
-              <Link href="#">Shop</Link>
+              <Link href="/works">Projects</Link>
             </li>
             <li>
               <Link href="#">Careers</Link>
@@ -53,7 +53,7 @@ const Footer = () => {
               <Link href="#">News and Blogs</Link>
             </li>
             <li>
-              <Link href="#">About Us</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
               <Link href="#">FAQ</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
               <Link href="#">Customer Support</Link>
             </li>
             <li>
-              <Link href="#">Contact Us</Link>
+              <Link href="/contact">Contact Us</Link>
             </li>
             <li>
               <Link href="#">Live Chat</Link>

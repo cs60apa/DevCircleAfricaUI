@@ -64,7 +64,7 @@ const Header = () => {
             </li>
 
             <li className="w-full px-4 py-1 ">
-              <Link href="career" className="text-white text-lg hover:text-gray-300">
+              <Link href="careers" className="text-white text-lg hover:text-gray-300">
                 Careers
               </Link>
             </li>
